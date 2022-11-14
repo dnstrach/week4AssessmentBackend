@@ -2,18 +2,32 @@
 <html>
   <head>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body class="container">
-    <button id="complimentButton">Get a compliment</button>
-    <button id="fortuneButton">Get a fortune</button>
+    <div id="fortuneContainer">
 
-    <form>
-      <input
-        type='text'
-        id='fortune'
-        placeholder='What is your fortune?' />
-        <button>add fortune</button>
-    </form>
+      <h1>Receive a Fortune</h1>
+
+      <button id="complimentButton">Get a compliment</button>
+      <button id="fortuneButton">Get a fortune</button>
+      <form>
+        <input type='text' id='newFortune' placeholder='What is your fortune?' />
+        <button id="newFortuneBtn">add fortune</button>
+      </form>
+
+      <form>
+        <input placeholder="index" id="updateFortuneIndex"/>
+        <input placeholder="Updated fortune" id="updateFortuneInput"/>
+        <button id="updateFortuneBtn">Update fortune</button>
+      </form>
+
+      <form>
+        <input placeholder="index" id="deleteFortuneInputel"/>
+        <button id="deleteFortuneBtn">Delete fortune</button>
+      </form>
+
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
